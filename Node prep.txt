@@ -1,0 +1,50 @@
+Node js is single threaded for async processing, by doing so it can achieve more performance and scalability.
+
+
+
+How single threaded model perform concurrency?
+
+Node js processig is heavily influenced by js event based model and callback system, thus nodejs can easily 
+achieve. Event- loop is responsible for maintaining the concurrency in nodejs
+
+
+A callback is a function that is called after a given task, it allows other code to run in the meantime, 
+and prevents blocking. It is passed as an argument to another functions. IT is commonly used to handle 
+asynchronous ops such as reading files, making http requests, executing db queries etc.
+
+Promises 
+
+
+Advantages of using promises instead of callbacks
+
+The logic of asynchronous is more specific and structured.
+Built-in errors
+Improved readibility.
+
+
+Modules are like js libraries that can be used to include certain set of functions.
+Some core modules are http, util, fs, stream etc.
+
+
+Libraries in nodejs are
+ExpressJs- It is nodejs web application framework that provides wide set of features 
+Mongoose- This framework is used to connect web app to a db
+
+
+Event loop handles async callbacks in nodejs.  it is the foundation of non-blocking I/O in nodejs.  
+
+
+NextTick() postpones the execution of action untill the next pass around the event loop. or it simply calls the 
+the callback once the loops current execution is completed.
+setImmediate() executes a callback on next cycle of the event loop and returns the control to the event loop for a
+any IO operations.
+
+
+A Nodejs server never waits for an api to return data. Instead it moves to next API after calling an API and a 
+notification mechanism from a Nodejs event responds to the previous API calls.
+
+
+
+
+
+ 
